@@ -1,0 +1,31 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDE settings
+.idea/
+.vscode/
+
+# MLflow logs & databases
+mlruns/
+*.db
+mlflow.db
+
+# Model artifacts (бинарники не хранят в git, только подтягивают при сборке)
+src/models/*.joblib
+*.joblib
+
+# Raw Datasets
+src/data/raw/*.csv
+*.csv
+
+# OS metadata
+.DS_Store
+Thumbs.db
