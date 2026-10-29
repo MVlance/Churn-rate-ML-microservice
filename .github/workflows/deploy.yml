@@ -23,7 +23,7 @@ jobs:
         with:
           context: .
           push: true
-          tags: MVlance/churn-api:latest
+          tags: mvlance/churn-api:latest
 
       - name: Deploy to AWS EC2
         uses: appleboy/ssh-action@v1.0.0
@@ -32,7 +32,7 @@ jobs:
           username: ubuntu
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo docker pull MVlance/churn-api:latest
+            sudo docker pull mvlance/churn-api:latest
             sudo docker stop churn_container || true
             sudo docker rm churn_container || true
-            sudo docker run -d --name churn_container -p 80:8000 MVlance/churn-api:latest
+            sudo docker run -d --name churn_container -p 80:8000 mvlance/churn-api:latest
