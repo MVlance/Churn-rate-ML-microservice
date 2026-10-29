@@ -58,7 +58,7 @@ ChurnProj/
 
 ---
 
-## 🎯 ML Strategy and Decision Threshold
+## 🎯 ML Strategy & Decision Threshold
 
 Standard classifiers default to a threshold of $\tau = 0.50$, which is sub-optimal for imbalanced retention problems where missing a churner (**False Negative**) is vastly more expensive than a false retention offer (**False Positive**).
 
